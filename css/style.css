@@ -1,0 +1,572 @@
+*{
+    box-sizing: border-box;
+    font-family: "Nunito Sans", "Lilita One", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    color: #4a4a4a;
+}
+
+p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+a{
+    font-size: 1.5rem;
+}
+
+/* HEADER */
+
+.main-header{
+    background: rgb(35, 65, 87);
+    min-height: 70px;
+    width: 100%;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.main-header h2{
+    font-size: 2.2rem;
+    font-weight: 300;
+    font-family: "Lilita One";
+}
+
+.tide{
+    color: rgb(211, 97, 60);
+    font-family: "Lilita One";
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    list-style-type: none;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.call{
+    border: 1px solid rgb(211, 97, 60);
+    background-color: rgb(211, 97, 60);
+    padding: 7px 18px;
+    margin-left: 5px;
+    border-radius: 50px;
+}
+
+/* BANNER */
+
+.banner{
+    background: rgb(211, 97, 60);
+    display: flex;
+    min-height: 38px;
+    padding: 5px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.banner p{
+    font-size: 1.4rem;
+}
+
+/* HEAD/BACKGROUND IMAGE */
+
+.headerImg{
+    background-image: linear-gradient(45deg,
+    rgba(35, 65, 87, 0.7),
+    rgba(252, 252, 252, 0.5)),
+    url(lobsterroll.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 520px;
+    width: 100%;
+}
+
+#imgText{
+    text-align: left;
+    width: 60%;
+    max-width: 700px;
+    margin-left: 10%;
+    padding-top: 100px;
+    color: white;
+}
+
+#imgText span{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#imgText h1{
+    font-family: "Lilita One";
+    font-size: 5.2rem;
+    line-height: 1;
+    margin: 0;
+}
+
+#Menu{
+    display: inline-block;
+    color: white;
+    background: rgb(211, 97, 60);
+    padding: 13px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+#howTo{
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+    padding: 11px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.headerImg p{
+    width: 75%;
+    padding: 20px 0;
+}
+
+.subheading{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgb(211, 97, 60);
+    letter-spacing: 1px;
+}
+
+/* MENU SECTION */
+
+.menu-container{
+    padding: 75px 10%;
+    background: rgb(246, 242, 232);
+}
+
+.menu-header{
+    margin-bottom: 40px;
+}
+
+.menu-header h1{
+    font-family: "Lilita One";
+    font-size: 3.6rem;
+    font-weight: 800;
+    color: rgb(35, 65, 87);
+    margin: 8px 0;
+}
+
+.menu-header p{
+    color: rgb(140, 136, 130);
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.menu-tables{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* INDIVIDUAL CONTENT CARDS */
+
+.menu-card{
+    flex: 1;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 35px;
+    border-top: 5px solid white;
+}
+
+.water-card{
+    border-top-color: rgb(35, 65, 87);
+}
+
+.sides-card{
+    border-top-color: rgb(211, 97, 60);
+}
+
+.menu-card h2{
+    font-family: "Lilita One";
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: rgb(35, 65, 87);
+    margin-bottom: 25px;
+}
+
+.menu-list{
+    list-style: none;
+}
+
+.menu-item{
+    margin-bottom: 20px;
+}
+
+.item-row{
+    display: flex;
+    align-items: center;
+}
+
+.item-name{
+    font-weight: 500;
+    color: #4a4a4a;
+    font-size: 1.6rem;
+    white-space: nowrap;
+}
+
+.item-dots{
+    flex: 1;
+    border-bottom: 1px dotted rgb(211, 97, 60);
+    margin: 0 20px;
+}
+
+.item-price{
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: rgb(211, 97, 60);
+}
+
+.item-price.market{
+    font-style: italic;
+    font-weight: 600;
+}
+
+.item-desc{
+    font-size: 1.4rem;
+    color: #8c8882;
+    margin-top: 4px;
+}
+
+.menu-footer{
+    text-align: center;
+    color: #8c8882;
+    margin-top: 50px;
+}
+
+.menu-footer strong{
+    color: #4a4a4a;
+}
+
+/* HOW TO EAT */
+
+.howto-container{
+    padding: 75px 10%;
+    background: rgb(35, 65, 87);
+}
+
+.howto-header{
+    margin-bottom: 40px;
+    color: rgb(211, 97, 60);
+    letter-spacing: 1px;
+}
+
+.howto-header h2{
+    font-family: "Lilita One";
+    font-size: 3.6rem;
+    color: white;
+    margin: 8px 0;
+}
+
+.howto-header p{
+    color: white;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.howto-card{
+    border: 1px solid white;
+    width: 23%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.card-head{
+    display: inline;
+    margin: 0 10px;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.howto-text{
+    display: inline-block;
+    margin: 10px;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.orange{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(211, 97, 60);
+    height: 28px;
+    width: 28px;
+    border-radius: 100%;
+    margin: 10px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* FIND THE WHARF */
+
+.location-container{
+    padding: 75px 10%;
+    background: rgb(246, 242, 232);
+}
+
+.location-header{
+    margin-bottom: 40px;
+    color: rgb(211, 97, 60);
+    letter-spacing: 1px;
+}
+
+.location-header h2{
+    font-family: "Lilita One";
+    font-size: 3.6rem;
+    color: rgb(35, 65, 87);
+    margin: 5px 0;
+}
+
+.location-card{
+    border: 1px solid white;
+    width: 32%;
+    border-radius: 5px;
+    background: white;
+    padding: 20px;
+}
+
+.location-card p{
+    margin-bottom: 5px;
+}
+
+.location-card a{
+    display: inline-block;
+    color: rgb(211, 97, 60);
+    margin-top: 7px;
+    margin-right: 10px;
+}
+
+.locationcard-head{
+    display: flex;
+    color: rgb(35, 65, 87);
+    padding: 5px 0 10px;
+    font-size: 1.8rem;
+}
+
+/* FOOTER */
+
+footer{
+    padding: 35px 10%;
+    background-color: rgb(35, 65, 87);
+    color: white;
+}
+
+footer h3{
+    font-size: 1.7rem;
+    margin-bottom: 8px;
+}
+
+footer a{
+    color: white;
+}
+
+.footer-top, .footer-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.footer-top{
+    padding-bottom: 25px;
+    border-bottom: 1px solid white;
+}
+
+.footer-bottom{
+    justify-content: space-between;
+}
+
+.incompatible{
+    display: none;
+}
+
+/* TABLET */
+
+@media (max-width: 920px) and (min-width: 690px){
+    .main-header{
+        padding: 15px 5%;
+    }
+
+    nav ul{
+        gap: 15px;
+    }
+
+    .headerImg{
+        display: flex;
+        align-items: center;
+    }
+
+    #imgText{
+        width: 75%;
+        margin-left: 8%;
+        padding-top: 0;
+    }
+
+    .menu-header, .howto-header, .location-header{
+        text-align: center;
+    }
+
+    .menu-container, .howto-container, .location-container{
+        padding: 55px 5%;
+    }
+
+    .card-container{
+        flex-wrap: wrap;
+    }
+
+    .howto-card{
+        width: 48%;
+    }
+
+    .location-card{
+        width: 31%;
+    }
+
+    footer{
+        padding: 30px 5%;
+    }
+}
+
+/* PHONE */
+
+@media (max-width: 689px){
+    .main-header{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    .main-header h2{
+        padding-bottom: 12px;
+    }
+
+    nav ul{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .call{
+        margin-left: 0;
+    }
+
+    .banner{
+        display: none;
+    }
+
+    .headerImg{
+        min-height: 500px;
+        display: flex;
+        align-items: center;
+        background-position: 58% center;
+    }
+
+    #imgText{
+        width: 85%;
+        margin-left: 8%;
+        padding-top: 0;
+    }
+
+    #imgText h1{
+        font-size: 4.2rem;
+    }
+
+    .headerImg p{
+        width: 100%;
+    }
+
+    #Menu, #howTo{
+        padding: 11px 16px;
+    }
+
+    .menu-header, .howto-header, .location-header{
+        text-align: center;
+    }
+
+    .menu-container, .howto-container, .location-container{
+        padding: 50px 25px;
+    }
+
+    .menu-tables{
+        flex-direction: column;
+    }
+
+    .menu-card{
+        padding: 25px;
+    }
+
+    .item-name{
+        white-space: normal;
+    }
+
+    .item-dots{
+        margin: 0 10px;
+    }
+
+    .card-container{
+        flex-direction: column;
+    }
+
+    .howto-card, .location-card{
+        width: 100%;
+    }
+
+    .footer-top, .footer-bottom{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer{
+        padding: 30px 25px;
+    }
+}
+
+@media (max-width: 449px){
+    #imgText h1{
+        font-size: 3.8rem;
+    }
+
+    #Menu, #howTo{
+        display: block;
+        width: fit-content;
+        margin-right: 0;
+    }
+}
